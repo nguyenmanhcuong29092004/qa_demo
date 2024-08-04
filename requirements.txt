@@ -1,9 +1,8 @@
-torch
-torchvision
-torchaudio
-transformers
-faiss-cpu
 streamlit
+torch
+transformers
+datasets
 evaluate
-numpy
-pandas
+faiss-cpu
+numpy>=1.21
+pandas>=1.3
