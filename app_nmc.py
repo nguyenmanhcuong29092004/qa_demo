@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1G6V9x-piz30NxzhII9G_Znud6AZ-MLwE
 """
 
-
+pip install torch torchvision torchaudio
 
 # Import các thư viện cần thiết
 import numpy as np
@@ -94,7 +94,7 @@ def get_best_answer(input_question):
             question=input_question,
             context=context
         )
-        if answer['score'] > best_score:
+        if answer['score'] < best_score:
             best_score = answer['score']
             best_answer = answer
 
